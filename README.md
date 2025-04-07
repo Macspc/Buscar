@@ -2,7 +2,7 @@
 -----------------------------------------------------------------
 # BusCar GPS - Sistema de Rastreamento Veicular
 
-!<img src="/img/logo.png" "> *
+<img src="img/logo.png" > 
 
 Sistema de rastreamento GPS para veículos com armazenamento em SD card e transmissão MQTT segura, desenvolvido para o **Projeto Integrador UNIVESP - Polo CPV**.
 
