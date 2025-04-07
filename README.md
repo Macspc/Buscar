@@ -1,7 +1,8 @@
-"PROJETO iNTEGRADOR IV Univesp - Polo Ca�apava" 
+"PROJETO iNTEGRADOR IV Univesp - Polo Caçapava" 
+-----------------------------------------------------------------
 # BusCar GPS - Sistema de Rastreamento Veicular
 
-![Logo BusCar](https://via.placeholder.com/150x50?text=BusCar) *(opcional: adicione uma imagem/logo)*
+!<img src="/img/logo.png" "> *
 
 Sistema de rastreamento GPS para veículos com armazenamento em SD card e transmissão MQTT segura, desenvolvido para o **Projeto Integrador UNIVESP - Polo CPV**.
 
@@ -45,9 +46,32 @@ O **BusCar** é um dispositivo embarcado que coleta dados de localização (GPS)
 | Chave ON/OFF | GPIO 4     |
 | LED MQTT     | GPIO 2     |
 
-### Configurações de Rede
-Edite no código:
-```cpp
-const char* ssid = "SUA_REDE_WIFI";
-const char* password = "SENHA_WIFI";
-const char* mqtt_server = "SEU_SERVIDOR_MQTT";
+🚀 Como Usar
+Gravação no ESP32:
+
+Conecte o ESP32 ao computador.
+
+Compile e envie o código via Arduino IDE.
+
+Operação:
+
+Liga a chave física para ativar o MQTT.
+
+Os dados serão exibidos no LCD e gravados no SD.
+
+Verifique o cartão SD para ver os logs (dados_gps.json).
+
+Monitoramento Remoto:
+
+Acesse o broker MQTT (ex: HiveMQ Cloud) para receber os dados em tempo real.
+
+🔄 Fluxo de Dados
+
+
+📝 Licença
+Este projeto é parte do Projeto Integrador UNIVESP e está sob licença MIT.
+
+✉️ Contato
+Equipe: Polo CPV - UNIVESP
+
+Email: exemplo@univesp.br
