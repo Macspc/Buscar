@@ -17,6 +17,8 @@ O **BusCar** é um dispositivo embarcado que coleta dados de localização (GPS)
 - 🔌 Controle por chave física (liga/desliga transmissão MQTT).
 
 ## 🛠️ Hardware Utilizado
+<img src="img/material.jpg" >
+
 - **Microcontrolador**: ESP32 (com WiFi e Bluetooth).
 - **Módulo GPS**: Neo-6M ou similar (comunicação serial).
 - **Display**: LCD 20x4 com interface I2C.
@@ -46,6 +48,12 @@ O **BusCar** é um dispositivo embarcado que coleta dados de localização (GPS)
 | Chave ON/OFF | GPIO 4     |
 | LED MQTT     | GPIO 2     |
 
+### Montagem
+<img src="img/montagem.jpg" >
+
+### Protótipo
+<img src="img/prototipo.jpg" >
+
 🚀 Como Usar
 Gravação no ESP32:
 
@@ -65,13 +73,28 @@ Monitoramento Remoto:
 
 Acesse o broker MQTT (ex: HiveMQ Cloud) para receber os dados em tempo real.
 
-🔄 Fluxo de Dados
+🔧 Funcionamento
+Chave ON:
+
+LED MQTT acende fixo durante conexão e pisca quando conectado ao broker
+
+Dados são gravados no SD e enviados via MQTT
+
+Chave OFF:
+
+LED apagado, dados são gravados apenas no SD
+
+Display LCD:
+
+Mostra ciclo de 4 páginas com dados GPS
+
+Exibe mensagens de status
 
 
 📝 Licença
 Este projeto é parte do Projeto Integrador UNIVESP e está sob licença MIT.
 
 ✉️ Contato
-Equipe: Polo CPV - UNIVESP
+Equipe: Grupo 8 - Projeto Integrador IV - Polo CPV - UNIVESP
 
-Email: exemplo@univesp.br
+Email: macspc@gmail.com
